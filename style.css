@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000c18;
+}
+
+.chat {
+    width: 100%;
+    height: 100%;
+    background-color: #000c18;
+}
+#user-input {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #181f2f;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#input-text {
+    width: 80%;
+    height: 50px;
+    background-color: #2b3c5d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    padding-left: 5px;
+}
+button {
+    width: 50px;
+    height: 50px;
+    background-color: #2b3c5d;
+    border: none;
+    border-radius: 5px;
+    color: #0063a5;
+    cursor: pointer;
+}
+#chat-messages {
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    color:#103c5c;
+    overflow-y: auto;
+}
+.message {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: auto;
+  height: auto;
+}
+
+.user {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: auto;
+  color: white;
+}
+
+.assistant {
+    height: auto;
+    color: white;
+}
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+.pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+  font-family: monospace;
+}
+
+.html-code {
+  color: #0063a5;
+  background-color: #10293a;
+  border-radius: 5px;
+}
+
+.css-code {
+  color: #0063a5;
+  background-color: #10293a;
+  border-radius: 5px;
+}
+
+.js-code {
+  color: #0063a5;
+  background-color: #10293a;
+  border-radius: 5px;
+}
+
+.code-type {
+  width: 100px;
+  height: 50px;
+  background-color: #10293a;
+  border-radius: 50px;
+  display: flex;justify-content: center;
+  align-items: center;
+}
